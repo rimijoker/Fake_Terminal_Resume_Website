@@ -1,6 +1,6 @@
 # Fake_Termial_Resume_Website
 
-
+<h3>PLEASE FORK INSTEAD OF CLONING.<br><br>I you like this repo please give it a star.<br></h3>
 Are you addicted to terminals?<br>
 Does a hacker ignite whenever you see one??<br>
 Do you want terminals everywhere??<br>
