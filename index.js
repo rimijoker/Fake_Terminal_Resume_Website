@@ -1,9 +1,9 @@
 var Typer = {
-  text: '',
+  text: "",
   accessCountimer: null,
   index: 0,
   speed: 2,
-  file: '',
+  file: "",
   accessCount: 0,
   deniedCount: 0,
   init: function () {
@@ -17,11 +17,11 @@ var Typer = {
   },
 
   content: function () {
-    return $('#console').html();
+    return $("#console").html();
   },
 
   write: function (str) {
-    $('#console').append(str);
+    $("#console").append(str);
     return false;
   },
 
@@ -42,11 +42,11 @@ var Typer = {
       Typer.hidepop();
     } else if (Typer.text) {
       var cont = Typer.content();
-      if (cont.substring(cont.length - 1, cont.length) == '|')
-        $('#console').html(
-          $('#console')
+      if (cont.substring(cont.length - 1, cont.length) == "|")
+        $("#console").html(
+          $("#console")
             .html()
-            .substring(0, cont.length - 1),
+            .substring(0, cont.length - 1)
         );
       if (key.keyCode != 8) {
         Typer.index += Typer.speed;
@@ -54,9 +54,9 @@ var Typer = {
         if (Typer.index > 0) Typer.index -= Typer.speed;
       }
       var text = Typer.text.substring(0, Typer.index);
-      var rtn = new RegExp('\n', 'g');
+      var rtn = new RegExp("\n", "g");
 
-      $('#console').html(text.replace(rtn, '<br/>'));
+      $("#console").html(text.replace(rtn, "<br/>"));
       window.scrollBy(0, 50);
     }
 
@@ -73,33 +73,33 @@ var Typer = {
   updLstChr: function () {
     var cont = this.content();
 
-    if (cont.substring(cont.length - 1, cont.length) == '|')
-      $('#console').html(
-        $('#console')
+    if (cont.substring(cont.length - 1, cont.length) == "|")
+      $("#console").html(
+        $("#console")
           .html()
-          .substring(0, cont.length - 1),
+          .substring(0, cont.length - 1)
       );
-    else this.write('|'); // else write it
+    else this.write("|"); // else write it
   },
 };
 
 function replaceUrls(text) {
-  var http = text.indexOf('http://');
-  var space = text.indexOf('.me ', http);
+  var http = text.indexOf("http://");
+  var space = text.indexOf(".me ", http);
 
   if (space != -1) {
     var url = text.slice(http, space - 1);
-    return text.replace(url, '<a href="' + url + '">' + url + '</a>');
+    return text.replace(url, '<a href="' + url + '">' + url + "</a>");
   } else {
     return text;
   }
 }
 
 Typer.speed = 3;
-Typer.file = 'rimijoker.html';
+Typer.file = "rimijoker.html";
 Typer.init();
 
-var timer = setInterval('t();', 30);
+var timer = setInterval("t();", 30);
 function t() {
   Typer.addText({ keyCode: 123748 });
 
