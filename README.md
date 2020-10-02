@@ -9,5 +9,5 @@ Then this website template is for you.
 
 A Fake terminal website for coders.
 
-Live Demo <a href="http://rimijoker.github.io/">here</a><br>
+Live Demo <a href="https://rimijoker.github.io/Fake_Terminal_Resume_Website/">here</a><br>
 <img src="Screenshot.png">
