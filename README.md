@@ -1,13 +1,18 @@
-# Fake_Termial_Resume_Website
+# Fake_Terminal_Resume_Website
 
-<h3>PLEASE FORK INSTEAD OF CLONING.<br><br>If you like this project please give it a star.<br></h3>
-Are you addicted to terminals?<br>
-Does a hacker ignite whenever you see one??<br>
-Do you want terminals everywhere??<br>
+## PLEASE FORK INSTEAD OF CLONING
+
+## If you like this project please give it a star
+
+Are you addicted to terminals?
+
+Does a hacker ignite whenever you see one??
+
+Do you want terminals everywhere???
 
 Then this website template is for you.
 
 A Fake terminal website for coders.
 
-Live Demo <a href="https://rimijoker.github.io/Fake_Terminal_Resume_Website/">here</a><br>
-<img src="Screenshot.png">
+Live Demo [here](https://rimijoker.github.io/Fake_Terminal_Resume_Website/)
+![Live website image](Screenshot.png)
