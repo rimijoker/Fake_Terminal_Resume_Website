@@ -1,4 +1,4 @@
-# Fake_Terminal_Resume_Website
+# Fake Terminal Resume Website
 
 ## PLEASE FORK INSTEAD OF CLONING
 
