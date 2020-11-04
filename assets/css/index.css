@@ -1,40 +1,5 @@
-html[data-theme='dark'] {
-  --text: #fff;
-  --background: #000;
-  --linkTag: #0bc;
-  --linkA: #0f0;
-  --linkB: #ff0096;
-  --linkC: #0bc;
-}
-
-html[data-theme='light'] {
-  --text: #000;
-  --background: #fff;
-  --linkTag: #00a8b7;
-  --linkA: #00cc00;
-  --linkB: #e50087;
-  --linkC: #00a8b7;
-}
-
 body {
   background-color: #000;
-}
-
-.header {
-  margin: auto;
-  max-width: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.theme-toggle {
-  font-size: 1.5rem;
-  color: var(--text);
-  border: none;
-  background: none;
-  cursor: pointer;
-  outline: none;
 }
 
 #console {
@@ -48,20 +13,20 @@ body {
 }
 
 a {
-  color: var(--linkTag);
+  color: #0bc;
   text-decoration: none;
 }
 
 #a {
-  color: var(--linkA);
+  color: #0f0;
 }
 
 #c {
-  color: var(--linkC);
+  color: #0bc;
 }
 
 #b {
-  color: var(--linkB);
+  color: #ff0096;
 }
 
 #k {
@@ -74,12 +39,12 @@ a {
 
 @keyframes change {
   0% {
-    color: var(--linkA);
+    color: #0f0;
   }
   50% {
-    color: var(--linkA);
+    color: #0f0;
   }
   99% {
-    color: var(--background);
+    color: black;
   }
 }

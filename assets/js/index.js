@@ -1,16 +1,3 @@
-var themeToggle = document.getElementById('themeToggle');
-		var doc = document.documentElement;
-
-		themeToggle.addEventListener('click', function () {
-			if (doc.getAttribute('data-theme') === 'dark') {
-				doc.setAttribute('data-theme', 'light')
-				themeToggle.innerHTML = '<i class="far fa-moon"></i>';
-			} else {
-				doc.setAttribute('data-theme', 'dark');
-				themeToggle.innerHTML = '<i class="far fa-sun"></i>';
-			}
-		})
-
 var Typer = {
   text: "",
   accessCountimer: null,
